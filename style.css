@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+:root {
+	--green-color: #C5FAD5;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	height: 100vh;
+	background-image: linear-gradient(to bottom right, #AA96DA 3%, #FFFFD2, #b0f5c5);
+	background-size: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 400px;
+	height: 500px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #AA96DA;
+	overflow: hidden;
+	margin: 0 30px;
+}
+
+.card__img {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	transition: 0.5s;
+	margin: 0 auto;
+	transform: translateY(30px);
+	border-radius: 50%;
+	border: 6px solid var(--green-color);
+	cursor: pointer;
+}
+
+.card__img:hover {
+	width: 100%;
+	height: 100%;
+	border-radius: unset;
+	border: unset;
+	transform: unset;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+a {
+	color: #FFFFD2 ;
+	margin-top: 45px;
+	display: inline-block;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+a:hover{
+	-ms-transform: scale(1.5); 
+	-webkit-transform: scale(1.5); 
+	transform: scale(1.5); 
+	margin-bottom: 10px;
+}
+
+p {
+	color: var(--green-color);
+	margin: 5px 0;
+}
+
+.card__social{
+	display: flex;
+	justify-content:space-around ;
+	margin: 5px 25px;
+}
+
+.card__social a {
+	text-decoration: none;
+	color: FFFFD2 ;
+	margin: 25px 0 ;
+	font-size: 25px;
+	transition: 0.5s;
+}
+
+
+.card__social a:hover {
+	color: var(--green-color);
+	-ms-transform: scale(2.2); 
+	-webkit-transform: scale(2.2); 
+	transform: scale(2.2); 
+}
+
+button {
+	outline: none;
+	border: none;
+	color: #FFFFD2;
+	font-size: 20px;
+	background-color: transparent;
+	border: 1px solid var(--green-color);
+	padding: 10px 20px;
+	border-radius: inherit;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+button:hover {
+	background-color: var(--green-color);
+	-ms-transform: scale(1.25); 
+	-webkit-transform: scale(1.25); 
+	transform: scale(1.25); 
+	color: #AA96DA;
+}
+ 
+@media only screen and (min-width: 414px) and (max-width: 767px){
+	.card{
+		width: 73%;
+		height: 70%;
+	}
+}
