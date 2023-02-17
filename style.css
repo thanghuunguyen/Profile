@@ -120,9 +120,8 @@ button:hover {
 	color: #AA96DA;
 }
  
-@media only screen and (min-width: 414px) and (max-width: 767px){
+@media only screen and (max-width: 320px){
 	.card{
-		width: 73%;
-		height: 70%;
+		height: 92%;
 	}
 }
